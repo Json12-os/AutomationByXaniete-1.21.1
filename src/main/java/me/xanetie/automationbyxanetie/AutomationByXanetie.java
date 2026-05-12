@@ -18,5 +18,6 @@ public class AutomationByXanetie implements ModInitializer {
 
 		LOGGER.info("Hello everyone!");
 		ModItems.registerModItems();
+		CustomCreativeTabs.RegisterCreativeTabs();
 	}
 }
