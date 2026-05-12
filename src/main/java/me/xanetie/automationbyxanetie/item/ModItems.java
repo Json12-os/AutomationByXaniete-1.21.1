@@ -9,6 +9,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 
 public class ModItems {
+    //code for new items
     public static final Item PINK_GARNET = registerItem("pink_garnet", new Item(new Item.Properties()));
 
     public static Item registerItem(String id, Item item){

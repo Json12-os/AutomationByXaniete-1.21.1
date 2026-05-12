@@ -1,5 +1,7 @@
 package me.xanetie.automationbyxanetie;
 
+import me.xanetie.automationbyxanetie.block.ModBlocks;
+import me.xanetie.automationbyxanetie.creativetabs.CustomCreativeTabs;
 import me.xanetie.automationbyxanetie.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -18,6 +20,7 @@ public class AutomationByXanetie implements ModInitializer {
 
 		LOGGER.info("Hello everyone!");
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 		CustomCreativeTabs.RegisterCreativeTabs();
 	}
 }

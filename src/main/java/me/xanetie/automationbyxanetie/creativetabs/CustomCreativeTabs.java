@@ -1,5 +1,7 @@
-package me.xanetie.automationbyxanetie;
+package me.xanetie.automationbyxanetie.creativetabs;
 
+import me.xanetie.automationbyxanetie.AutomationByXanetie;
+import me.xanetie.automationbyxanetie.block.ModBlocks;
 import me.xanetie.automationbyxanetie.item.ModItems;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -26,6 +28,7 @@ public class CustomCreativeTabs {
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, CUSTOM_INGREDIENTS_KEY, CUSTOM_INGREDIENTS_GROUP);
         ItemGroupEvents.modifyEntriesEvent(CUSTOM_INGREDIENTS_KEY).register(itemGroup -> {
             itemGroup.accept(ModItems.PINK_GARNET);
+            itemGroup.accept(ModBlocks.HELLO_BLOCK);
         });
 
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, CUSTOM_ITEM_GROUP_KEY, CUSTOM_ITEM_GROUP);
